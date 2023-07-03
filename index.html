@@ -284,7 +284,7 @@
       xhr.setRequestHeader('Content-Type', 'application/json');
       /* love and peace; don't let me down :) */
       xhr.setRequestHeader('Authorization', 'Bearer 5959ae0ffc42f5e6b8cee4ebf1b7ee0218bfc291');
-      xhr.send(JSON.stringify({ "long_url": "https://dreampuf.github.io/GraphvizOnline/#" + content}));
+      xhr.send(JSON.stringify({ "long_url": "https://icduck.github.io/GraphvizOnline.github.io/#" + content}));
       xhr.onreadystatechange = function () {
         if (this.readyState != 4) return;
 
@@ -293,7 +293,7 @@
           var result = JSON.parse(this.responseText);
           shareURLEl.value = result.link;
         } else {
-          shareURLEl.value = "https://dreampuf.github.io/GraphvizOnline/#" + content
+          shareURLEl.value = "https://icduck.github.io/GraphvizOnline.github.io/#" + content
         }
       };
     }
