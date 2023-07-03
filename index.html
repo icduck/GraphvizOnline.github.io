@@ -17,20 +17,22 @@
             bottom: 0;
             right: 50%;
             left: 0;
-            display: none;
         }
 
         #review {
-          position: absolute;
-          left: 0px;
-          right: 0px;
-          top: 0px;
+            margin: 0;
+            position: absolute;
+            top: 50px;
+            bottom: 0;
+            right: 0;
+            left: 50%;
+            overflow: scroll;
         }
 
         #options {
             margin: 0;
             position: fixed;
-            left: 100%;
+            left: 50%;
             width: 100%;
         }
 
@@ -124,7 +126,7 @@
     </style>
 </head>
 <body>
-<pre id="editor" hidden="hidden">digraph G {
+<pre id="editor">digraph G {
 
   subgraph cluster_0 {
     style=filled;
